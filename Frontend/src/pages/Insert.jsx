@@ -12,6 +12,8 @@ const Insert=()=>{
         console.log(input)
 
      }
+
+        
      const handelSubmit=(e)=>{
          e.preventDefault();
          let  api = "http://localhost:8003/student/stuSave"
@@ -32,11 +34,11 @@ const Insert=()=>{
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Enter name</Form.Label>
-        <Form.Control type="text" name="name" onChange={handleInput} value={input.name} placeholder="Enter email" />
+        <Form.Control type="text" name="name" onChange={handleInput} value={input.name} placeholder="Enter Name" />
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Enter City</Form.Label>
-        <Form.Control type="text" name="city"onChange={handleInput} value={input.city} placeholder="Enter email" />
+        <Form.Control type="text" name="city"onChange={handleInput} value={input.city} placeholder="Enter City" />
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formBasicPassword">
