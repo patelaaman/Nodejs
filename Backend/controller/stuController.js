@@ -28,7 +28,15 @@ const stuDisplay= async(req,res)=>{
 
 }
 
+   const stuDataSearch=async(req,res)=>{
+         let {rollno} = req.body;
+         const mydata = await stuModel.find({rollno:rollno}) 
+
+         res.send(mydata)
+   }
+
 module.exports={
     stuSave,
-    stuDisplay
+    stuDisplay,
+    stuDataSearch
 }

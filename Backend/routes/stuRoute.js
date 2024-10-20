@@ -5,5 +5,7 @@ const stuCon = require("../controller/stuController")
 
 route.post("/stuSave",stuCon.stuSave)
 route.get("/studisplay",stuCon.stuDisplay)
+route.post("/studatasearch",stuCon.stuDataSearch)
+
 
 module.exports =route

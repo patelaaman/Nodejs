@@ -4,6 +4,7 @@ import Home from "./pages/Home"
 import About from "./pages/About"
 import Insert from "./pages/Insert"
 import Display from "./pages/Display"
+import Search from "./pages/Search"
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
               <Route path="about" element={<About></About>}></Route>
               <Route path="insert" element={<Insert></Insert>}></Route>
               <Route path="display" element={<Display></Display>}></Route>
+              <Route path="search" element={<Search></Search>}></Route>
              </Route>
          </Routes>
      </BrowserRouter>
